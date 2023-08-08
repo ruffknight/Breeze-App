@@ -1,0 +1,1380 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone{
+    position: relative;
+    height: 896px;
+    width: 414px;
+    background: #121212;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+
+.screen{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 10px;
+    left: 10px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bottomtext{
+    position: absolute;
+    top: 750px;
+    bottom: 0px;
+    right: 20px;
+    left: 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.splashtext{
+    position: absolute;
+    left: 34.54%;
+    right: 34.53%;
+    top: 52.01%;
+    bottom: 41.96%;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #373737;
+}
+
+.passaro{
+    position: absolute;
+    top: 39.96%;
+    bottom: 46.73%;
+    right: 0px;
+    left: 220px;
+}
+
+.smallpassaro{
+    position: absolute;
+    width: 53px;
+    height: 57px;
+    left: 70%;
+    top: 14.5%;
+}
+
+.faladopassaro{
+    position: absolute;
+    top: 14.17%;
+    bottom: 77.46%;
+    right: 41.55%;
+    left: 14.49%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.nameinput{
+    position: absolute;
+    top: 200px;
+    bottom: 0px;
+    right: 60%;
+    left: 15.8%;
+    text-align: left;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 20px;
+    float: left;
+}
+
+.pau{
+    position: absolute;
+    top: 424px;
+    bottom: 0px;
+    right: 0px;
+    left: 58px;
+
+}
+
+.smallpau{
+    position: absolute;
+    width: 151px;
+    height: 41px;
+    left: 61%;
+    top: 19%;
+}
+
+.smallpau2{
+    position: absolute;
+    width: 220px;
+    height: 60px;
+    left: 10px;
+    top: 72.88%;
+    transform: matrix(-1, 0.06, 0.06, 1, 0, 0);
+}
+
+.separator{
+    position: absolute;
+    left: -0.97%;
+    right: 0.97%;
+    top: 90.29%;
+    bottom: 9.71%;
+}
+
+.navsafeplace{
+    position: absolute;
+    width: 70px;
+    height: 54px;
+    left: 48px;
+    top: 815px;
+}
+
+.navhome{
+    position: absolute;
+    width: 60px;
+    height: 54px;
+    left: 168px;
+    top: 815px;
+}
+
+.navlearn{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 284px;
+    top: 822px;
+}
+
+.navlearntext{
+    position: absolute;
+    left: 66%;
+    right: -91.5%;
+    top: 92.25%;
+    bottom: 0%;
+    width: 80px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.separator2{
+    position: absolute;
+    left: -0.97%;
+    right: 0.97%;
+    top: 92.2%;
+    bottom: 9.71%;
+}
+
+.navsafeplace2{
+    position: absolute;
+    width: 70px;
+    height: 54px;
+    left: 40px;
+    top: 795px;
+}
+
+.navhome2{
+    position: absolute;
+    width: 45px;
+    height: 54px;
+    left: 164px;
+    top: 795px;
+}
+
+.navlearn2{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 273px;
+    top: 802px;
+}
+
+.navlearntext2{
+    position: absolute;
+    left: -39.96%;
+    right: -94%;
+    top: 94.5%;
+    bottom: 0%;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.navlearn3{
+    position: absolute;
+    width: 65px;
+    height: 50px;
+    left: 282px;
+    top: 818px;
+}
+
+.youcanclick{
+    position: absolute;
+    top: 600px;
+    bottom: 0px;
+    right: 75px;
+    left: 75px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.next{
+    position: absolute;
+    top: 83.71%;
+    bottom: 11.16%;
+    right: 28.99%;
+    left: 28.5%;
+}
+
+.skiptutorial{
+    position: absolute;
+    top: 90.96%;
+    bottom: 3.91%;
+    right: 28.99%;
+    left: 28.5%;
+}
+
+.circle{
+    position: absolute;
+    width: 105px;
+    height: 102px;
+    left: 148px;
+    top: 420px;
+}
+
+.safeplace{
+    position: absolute;
+    width: 66px;
+    height: 54px;
+    left: 169px;
+    top: 438px;
+}
+
+.tutorialtext{
+    position: absolute;
+    top: 30.69%;
+    bottom: 60.94%;
+    right: 60px;
+    left: 60px;
+
+    font-family: Mulish;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #373737;
+}
+
+.tutorialtext2{
+    position: absolute;
+    top: 200px;
+    bottom: 0px;
+    right: 60px;
+    left: 60px;
+
+    font-family: Mulish;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #373737;
+}
+
+.learnmore{
+    position: absolute;
+    width: 66px;
+    height: 32px;
+    left: 167px;
+    top: 444px;
+}
+
+.learnmoretext{
+    position: absolute;
+    top: 485px;
+    bottom: 0px;
+    right: 55px;
+    left: 60px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #373737;
+}
+
+.shuffle{
+    position: absolute;
+    width: 66px;
+    height: 70px;
+    left: 169px;
+    top: 436px;
+}
+
+.circle2{
+    position: absolute;
+    top: 36.94%;
+    bottom: 33.93%;
+    right: 17.87%;
+    left: 17.15%;
+}
+
+.circle3{
+    position: absolute;
+    width: 93px;
+    height: 93px;
+    left: 265px;
+    top: 113px;
+}
+
+.relaxation{
+    position: absolute;
+    top: 40.4%;
+    bottom: 53.57%;
+    right: 26.37%;
+    left: 25.85%;
+}
+
+.music{
+    position: absolute;
+    top: 48.49%;
+    bottom: 45.48%;
+    right: 26.47%;
+    left: 25.85%;
+}
+
+.todolist{
+    position: absolute;
+    top: 56.57%;
+    bottom: 37.4%;
+    right: 26.65%;
+    left: 25.85%;
+}
+
+.menurelaxation{
+    position: absolute;
+    top: 309px;
+    width: 256px;
+    height: 70px;
+    left: 41px;
+}
+
+.menumusic{
+    position: absolute;
+    top: 403px;
+    width: 256px;
+    height: 70px;
+    left: 41px;
+}
+
+.menutodolist{
+    position: absolute;
+    top: 497px;
+    width: 256px;
+    height: 70px;
+    left: 41px;
+}
+
+.menushuffle1{
+    position: absolute;
+    width: 70px;
+    height: 72px;
+    left: 304px;
+    top: 310.89px;
+}
+
+.menushuffle2{
+    position: absolute;
+    width: 70px;
+    height: 72px;
+    left: 305px;
+    top: 402.89px;
+}
+
+.welcometext{
+    position: absolute;
+    top: 13.73%;
+    bottom: 83.48%;
+    right: 56.28%;
+    left: 10.14%;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.menumeditation{
+    position: absolute;
+    width: 334px;
+    height: 150px;
+    left: 42px;
+    top: 211px;
+}
+
+.menubreathing{
+    position: absolute;
+    width: 336px;
+    height: 150px;
+    left: 42px;
+    top: 385px;
+}
+
+.menuyoga{
+    position: absolute;
+    width: 339px;
+    height: 150px;
+    left: 38px;
+    top: 554px;
+}
+
+.menumeditationchar{
+    position: absolute;
+    width: 172px;
+    height: 117px;
+    left: 194px;
+    top: 227px;
+}
+
+.menubreathingchar{
+    position: absolute;
+    width: 176px;
+    height: 135px;
+    left: 182px;
+    top: 398px;
+}
+
+.menuyogachar{
+    position: absolute;
+    width: 141.14px;
+    height: 125.87px;
+    left: 197px;
+    top: 566px;
+}
+
+.menumeditationtext{
+    position: absolute;
+    left: 21%;
+    right: 49.28%;
+    top: 30%;
+    width: 1px;
+    height: 1px;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    text-align: left;
+}
+
+.menubreathingtext{
+    position: absolute;
+    left: 21%;
+    right: 52.42%;
+    top: 50%;
+    bottom: 46.43%;
+    width: 1px;
+    height: 1px;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    text-align: left;
+}
+
+.menuyogatext{
+    position: absolute;
+    left: 15.5%;
+    right: 54.5%;
+    top: 68%;
+    bottom: 28.12%;
+    width: 1px;
+    height: 1px;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    text-align: left;
+}
+
+.meditationbg{
+    position: absolute;
+    width: 792.73px;
+    height: 558.48px;
+    left: -170px;
+    top: 200px;
+}
+
+.fourgrid1{
+    position: absolute;
+    width: 155px;
+    height: 191px;
+    left: 25px;
+    top: 244px;
+}
+
+.fourgrid1text{
+    position: absolute;
+    left: 25.5%;
+    right: 54.11%;
+    top: 37.5%;
+    bottom: 59.6%;
+    width: 1px;
+    height: 1px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.fourgrid2{
+    position: absolute;
+    width: 155px;
+    height: 191px;
+    left: 209px;
+    top: 245px;
+}
+
+.fourgrid2text{
+    position: absolute;
+    left: 73.11%;
+    right: 8.7%;
+    top: 37.5%;
+    bottom: 59.15%;
+    width: 1px;
+    height: 1px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 45px;
+    padding-bottom: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.fourgrid3{
+    position: absolute;
+    width: 155px;
+    height: 191px;
+    left: 25px;
+    top: 457px;
+}
+
+.fourgrid3text{
+    position: absolute;
+    left: 25.5%;
+    right: 53.38%;
+    top: 62%;
+    bottom: 35.83%;
+    width: 1px;
+    height: 1px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.fourgrid4{
+    position: absolute;
+    width: 155px;
+    height: 191px;
+    left: 209px;
+    top: 458px;
+}
+
+.fourgrid4text{
+    position: absolute;
+    left: 73.11%;
+    right: 8.7%;
+    top: 62%;
+    bottom: 35.94%;
+    width: 1px;
+    height: 1px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.screentitle{
+    position: absolute;
+    width: 288px;
+    height: 23px;
+    left: 90px;
+    top: 50px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.screentitle2{
+    position: absolute;
+    width: 288px;
+    height: 23px;
+    left: 78px;
+    top: 31px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.screentitle3{
+    position: absolute;
+    width: 288px;
+    height: 23px;
+    left: 54px;
+    top: 131px;
+
+    font-family: Mulish;
+    font-style: black;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.underscreentitle{
+    position: absolute;
+    width: 207.74px;
+    height: 18px;
+    left: 92px;
+    top: 78px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    text-align: left;
+}
+
+.underscreentitle2{
+    position: absolute;
+    width: 207.74px;
+    height: 18px;
+    left: 80px;
+    top: 58px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    text-align: left;
+}
+
+.backbutton{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 34px;
+    top: 58px;
+}
+
+.backbutton2{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 24px;
+    top: 38px;
+}
+
+section {
+    height: 1020px;
+    width: 480px;
+    border: 1px solid #ccc;
+}
+
+frame {
+    height: 1020px;
+    width: 480px;
+}
+
+header {
+    padding: 30px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Mulish", sans-serif;
+    font-size:2.5rem;
+    text-align:center;
+    font-weight:100;
+}
+
+h2 {
+    padding: 30px;
+    padding-top: 320px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Mulish", sans-serif;
+    font-size:2.5rem;
+    text-align:center;
+    font-weight:100;
+    user-select: none;
+}
+
+.splashlogo{
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    left: 145px;
+    top: 350px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+/*MOOD TRACKER*/
+.smallpauinverted{
+    position: absolute;
+    width: 118,52px;
+    height: 32px;
+    left: 2.5%;
+    top: 23.88%;
+    bottom: 72.54%;
+
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.smallbirdinverted{
+    position: absolute;
+    width: 50,65px;
+    height: 53px;
+    right: 74%;
+    top: 19.20%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+
+.smallbirdtext{
+    position: absolute;
+    left: 43%;
+    right: 11.11%;
+    top: 21.65%;
+    bottom: 75.78%;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #373737;
+}
+
+/*page 1: 1st rectangule*/
+.stressedbutton{
+    position: absolute;
+    width: 334px;
+    height: 70px;
+    left: 41px;
+    top: 352px;
+
+    background: #FADCD6;
+    border-radius: 10px;
+}
+
+/*page 1: 2nd rectangule*/
+.anxiousbutton{
+    position: absolute;
+    width: 334px;
+    height: 70px;
+    left: 41px;
+    top: 454px;
+
+    background: #EAF6FD;
+    border-radius: 10px;
+}
+
+
+/*page 1: 3rd rectangule*/
+.overwhelmedbutton{
+    position: absolute;
+    width: 334px;
+    height: 70px;
+    left: 39px;
+    top: 556px;
+
+    background: #E3CABA;
+    border-radius: 10px;
+}
+
+.buttons_text{
+    position: absolute;
+    width: 207.74px;
+    height: 23px;
+    left: 30px;
+    top: 10px;
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+
+    display: flex;
+    text-align: left;
+
+    color: #373737;
+}
+
+
+/*page 2 of mood tracker*/
+
+.quickmeditation{
+    position: absolute;
+    width: 334px;
+    height: 70px;
+    left: 41px;
+    top: 454px;
+
+    background: #FADCD6;
+    border-radius: 10px;
+}
+
+/*LEARN MORE*/
+
+/*screen 1: learnmore*/
+.LMtittle{
+    position: absolute;
+    width: 288px;
+    height: 23px;
+    left: 123px;
+    top: 78px;
+    
+    font-family: Mulish;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #373737;
+}
+
+.LMsmalltittle{
+    position: absolute;
+    width: 207.74px;
+    height: 18px;
+    left: 92px;
+    top: 102px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #373737;
+}
+
+.small_i{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 93px;
+    top: 78px;
+}
+
+.rec1{
+    position: absolute;
+    width: 334px;
+    height: 70px;
+    left: 42px;
+    top: 296px;
+
+    background: #FFE8E3;
+    border-radius: 10px;
+}
+
+.rec2{
+    position: absolute;
+    width: 334px;
+    height: 70px;
+    left: 42px;
+    top: 388px;
+
+    background: #F5DCCB;
+    border-radius: 10px;
+}
+
+.rec3{
+    position: absolute;
+    width: 334px;
+    height: 70px;
+    left: 42px;
+    top: 480px;
+
+    background: #EAB197;
+    border-radius: 10px;
+}
+
+.rec4{
+    position: absolute;
+    width: 333px;
+    height: 70px;
+    left: 41px;
+    top: 572px;
+
+    background: #96C9D9;
+    border-radius: 10px;
+}
+
+/*screen 2: lm_mindfulness*/
+.bigrectangule{
+    position: absolute;
+    width: 336px;
+    height: 480px;
+    left: 35px;
+    top: 215px;
+    
+    background: #FFE8E3;
+    border-radius: 10px;
+}
+
+.rec5{
+    position: absolute;
+    width: 339px;
+    height: 61px;
+    left: 32px;
+    top: 729px;
+    
+    background: #F5DCCB;
+    border-radius: 10px;
+}
+
+.big_buttons_next{
+    position: absolute;
+    width: 207.74px;
+    height: 23px;
+    left: 135px;
+    top: 1px;
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 23px;
+
+    display: flex;
+    text-align: center;
+
+    color: #373737;
+     
+}
+
+.mindfulness_img{
+    position: absolute;
+    width: 278px;
+    height: 200,25px;
+    top: 177px;
+    bottom: 67px;
+   
+    right: 30px;
+}
+
+.mindfulness_txt{
+    position: absolute;
+    width: 309px;
+    height: 384px;
+    left: 14px;
+    top: 30px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    text-align: justify;
+
+    color: #373737;
+}
+
+.small_mindfulness_txt{
+    position: absolute;
+    width: 309px;
+    height: 384px;
+    left: 20px;
+    top: 255px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #373737;
+}
+
+.small_todolist_txt{
+    position: absolute;
+    width: 309px;
+    height: 384px;
+    left: 20px;
+    top: 248px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #373737;
+}
+
+
+.big_buttons_goto{
+    position: absolute;
+    width: 207.74px;
+    height: 23px;
+    left: 95px;
+    top: 1px;
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 23px;
+
+    display: flex;
+    text-align: center;
+
+    color: #373737;
+}
+
+/*screen 2: lm_todo*/
+.bigrectangule_todo{
+    position: absolute;
+    width: 336px;
+    height: 480px;
+    left: 35px;
+    top: 215px;
+    
+    background: #EAB197;
+    border-radius: 10px;
+}
+
+
+/*SAFE PLACE*/
+
+.paumedio{
+    position: absolute;
+    width: 255px;
+    height: 73,97px;
+    top: 225px;
+    left: 149px;    
+}
+
+.passaromedio{
+    position: absolute;
+    width: 96px;
+    height: 100,33px;
+    top: 148px;
+    left: 240px;
+}
+
+.text_5senses{
+    position: absolute;
+    width: 292px;
+    height: 207px;
+    left: 65px;
+    top: 300px;
+
+    font-family: Mulish;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+
+    color: #373737;
+}
+
+.start_button{
+    position: absolute;
+    width: 336px;
+    height: 64px;
+    left: 35px;
+    top: 641px;
+    
+    background: #96C9D9;
+    border-radius: 10px;
+}
+
+.emergency_contacts_button{
+    position: absolute;
+    width: 336px;
+    height: 64px;
+    left: 35px;
+    top: 716px;
+
+    background: #EAB197;
+    border-radius: 10px;
+}
+
+.gotorelaxationbutton{
+    position: absolute;
+    width: 339px;
+    height: 61px;
+    left: 39px;
+    top: 728px;
+
+    background: #96C9D9;
+    border-radius: 10px;
+}
+
+.gotorelaxationtext{
+    position: absolute;
+    width: 207.74px;
+    height: 30px;
+    left: 85px;
+    top: 730px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    text-align: center;
+
+    color: #373737;
+}
+
+.emergency_contacts_text{
+    position: absolute;
+    width: 307px;
+    height: 576px;
+    left: 54px;
+    top: 150px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+  
+    text-align: left;
+
+    color: #373737;
+}
+
+.letsbreathe{
+    position: absolute;
+    width: 288px;
+    height: 23px;
+    left: 150px;
+    top: 168px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    display: flex;
+    text-align: center;
+
+    color: #373737;
+}
+
+.audio{
+    visibility: hidden;
+}
+
+.player{
+    position: relative;
+    left: 168px;
+    top: 320px;
+}
+/*VIDEO*/
+
+.video{
+    position: absolute;
+    left: 0px;
+    top: 250px;
+}
+
+.yogabg{
+    position: absolute;
+    width: 792.73px;
+    height: 600.48px;
+    opacity: 0.3;
+    left: -310px;
+    top: 180px;
+}
+
+
+.playbutton{
+    position: absolute;
+    width: 115px;
+    top: 44%;
+    left: 36%;
+}
+.playbutton input[type="checkbox"] {
+    
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.fifteenback{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 48%;
+    left: 14%
+}
+
+.fifteenback input[type="checkbox"]{
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    top: 180%;
+}
+
+.fifteenforward{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 48%;
+    left: 73%
+}
+.fifteenforward input[type="checkbox"]{
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    top: 180%;
+}
+
+
+/*VIDEOS ON LEARN MORE TABS*/
+
+.learnmorevideos{
+    position: absolute;
+    left: 37.5px;
+    top: 320px;
+}
+
+
+.mind_button{
+    position: absolute;
+    width: 207.74px;
+    height: 23px;
+    left: 50px;
+    top: -10px;
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 23px;
+
+    display: flex;
+    text-align: center;
+
+    color: #373737;
+}

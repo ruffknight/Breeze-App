@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+    .h2-mulish {
+        font-family: 'Mulish', sans-serif;
+    }
+    </style>
+</head>
+<body onload="reloadTodo()">
+    <header>
+        <div class="splash">
+            <div class="phone">
+                <div class="screen"> 
+                    <div id="inputTask" style="margin-top:25%; height: 60%;">
+                        <form>
+                            <input class="underscreentitle" type="text" id="myInput" name="task" placeholder="Insert the new task" style="margin-top: 10%; margin-left: -10%; width: 60%; border: none; border-bottom: 1px grey solid;">
+                            <span onclick="addToList()"><img src="https://www.flaticon.com/svg/static/icons/svg/711/711239.svg" alt="Submit"  style="width: 5%; margin-left: 60%; cursor: pointer;"></span>
+                        </form> 
+                            
+                        <ul id="myUL">
+                        </ul>
+                    </div>   
+                    <div>
+                        <div id="complete">Completed</div>
+                        <div id="completedTask">
+                          <ul id="myULDone">
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="screentitle">
+                    <p>What are your goals today?</p>
+                </div>
+                <div onclick="window.location.href = 'mainmenu.html'">
+                    <img src="./img/backbutton.svg" onclick="window.location.href = 'mainmenu.html'" alt= "Header" class="backbutton">
+                </div>
+                <div class="underscreentitle" style="width: 100%;">
+                    <p>Click on the box to complete a task.</p>
+                </div>
+            
+                <div>
+                    <img src="./img/pau.svg" alt= "Header" class="smallpau" style="opacity: 20%;">
+                </div>
+
+                <div>
+                    <img src="./img/pau.svg" alt= "Header" class="smallpau2" style="opacity: 20%;">
+                </div>
+
+
+                <div>
+                    <img src="./img/line.svg" alt= "Header" class="separator">
+                    <img src="./img/safeplace.svg" alt= "Header" class="navsafeplace">
+                    <img src="./img/home.svg" onclick="window.location.href = 'mainmenu.html'" alt= "Header" class="navhome">
+                    <img src="./img/learnmore.svg" onclick="window.location.href = 'learnmore.html'" alt= "Header" class="navlearn">
+                    <h6 class="navlearntext">Learn more</h6>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<style>
+
+#completedTask{
+    border-top: 1px #D3EFFF solid;
+}
+
+#complete {
+    background-color: #D3EFFF;
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
+    font-size: 14px;
+    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
+    margin-top: -4.4%;
+    margin-right: 5px;
+}
+</style>
+
+<script>
+
+function addToList() {
+  var li = document.createElement("li");
+  var label= document.createElement("label");
+  var checkbox = document.createElement("input");
+
+  li.style.fontFamily = "Mulish";
+  li.style.fontWeight = "200";
+  li.style.fontStyle = "normal";
+  li.style.fontSize = "14px";
+  li.style.listStyleType = "none";
+  li.style.float = "left";
+  li.style.width = "90%"
+  li.style.height = "auto"
+  li.style.overflow = "hidden"
+  li.style.wordBreak = "break-all"
+  li.style.wordWrap = "break-word"
+  li.style.textAlign = "left"
+  li.style.paddingBottom = "5px"
+
+  var inputValue = document.getElementById("myInput").value;
+
+
+  if (inputValue === '') {
+    // does nothing
+  } else {
+    localStorage.setItem("counter", parseInt(localStorage.getItem("counter"))+1);
+    localStorage.setItem(localStorage.getItem("counter"), inputValue);
+    localStorage.setItem('C'+localStorage.getItem("counter"), false);
+
+    li.id = "li"+localStorage.getItem("counter");
+    var t = document.createTextNode(inputValue);
+
+    checkbox.type = "checkbox";
+    checkbox.id = 'C'+localStorage.getItem("counter");
+    checkbox.onclick = function() {
+      if (this.checked) {
+        if (localStorage.getItem("firstTask") === 'true') {
+          localStorage.setItem("lastTasksInserted", '['+inputValue+']');
+          localStorage.setItem("firstTask", false);
+        }else if (localStorage.getItem("lastTasksInserted").replace('[','').replace(']','').split(",").length < 5){
+          var arr = localStorage.getItem("lastTasksInserted").replace('[','').replace(']','').split(",");
+          localStorage.setItem("lastTasksInserted", arr);
+        } else if (localStorage.getItem("lastTasksInserted").replace('[','').replace(']','').split(",").length == 5) {
+          var arr = localStorage.getItem("lastTasksInserted").replace('[','').replace(']','').split(",");
+          arr.pop();
+          arr.unshift(inputValue);
+          localStorage.setItem("lastTasksInserted", arr);
+        }
+        localStorage.setItem(this.id, true);
+        reloadCompleted()
+      }
+    };
+
+    label.appendChild(checkbox);
+    label.appendChild(t);
+
+
+    li.appendChild(label);
+    li.appendChild(checkbox);
+    li.appendChild(t);
+
+    var img = document.createElement('img');
+    img.src = 'https://www.flaticon.com/svg/static/icons/svg/1214/1214428.svg';
+    img.id = ''+localStorage.getItem("counter");
+    img.width = '15'
+    img.align='right'
+    img.onclick = function (){
+      deleteTask(this);
+    }
+    li.appendChild(img);
+
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+}
+
+function reloadTodo(){
+  for (let i = 1; i <= parseInt(localStorage.getItem("counter")); ++i){
+    var li = document.createElement("li");
+
+    var inputValue = localStorage.getItem(i);
+    var t = document.createTextNode(inputValue);
+
+    var label= document.createElement("label");
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = 'C'+i;
+
+    label.appendChild(checkbox);
+    label.appendChild(t);
+
+    li.style.fontFamily = "Mulish"
+    li.style.fontWeight = "200"
+    li.style.fontStyle = "normal"
+    li.style.fontSize = "14px"
+    li.style.listStyleType = "none"
+    li.style.float = "left"
+    li.style.width = "90%"
+    li.style.height = "auto"
+    li.style.overflow = "hidden"
+    li.style.wordBreak = "break-all"
+    li.style.wordWrap = "break-word"
+    li.style.textAlign = "left"
+    li.style.paddingBottom = "5px"
+    li.id = "li"+localStorage.getItem("counter");
+
+    
+    li.appendChild(label);
+    var seeIfChecked = localStorage.getItem('C'+i);
+    if (seeIfChecked === 'true') {
+      checkbox.checked = true;
+    }
+    li.appendChild(checkbox);
+    li.appendChild(t);
+
+    var img = document.createElement('img');
+    img.src = 'https://www.flaticon.com/svg/static/icons/svg/1214/1214428.svg';
+    img.id = ''+i;
+    img.width = '15'
+    img.align='right'
+    img.onclick = function (){
+      deleteTask(this);
+    }
+    li.appendChild(img);
+
+    document.getElementById("myUL").appendChild(li);
+  }
+  reloadCompleted();   
+}
+
+function reloadCompleted(){
+  document.getElementById("myULDone").innerHTML = "";
+  // completed tasks
+  var arr = localStorage.getItem("lastTasksInserted").replace('[','').replace(']','').split(",")
+
+  for (let i = 0; i < 5; ++i) {
+    if (typeof(arr[i]) != 'undefined'){
+      var li = document.createElement("li");
+
+      var inputValue = arr[i];
+      var t = document.createTextNode(inputValue);
+
+      li.style.fontFamily = "Mulish"
+      li.style.fontWeight = "200"
+      li.style.fontStyle = "normal"
+      li.style.fontSize = "14px"
+      li.style.listStyleType = "none"
+      li.style.float = "left"
+      li.style.width = "90%"
+      li.style.height = "auto"
+      li.style.overflow = "hidden"
+      li.style.wordBreak = "break-all"
+      li.style.wordWrap = "break-word"
+      li.style.textAlign = "left"
+      li.style.paddingBottom = "5px"
+      li.style.textDecoration =  "line-through"
+
+      li.appendChild(t);
+
+      document.getElementById("myULDone").appendChild(li);
+    }    
+  }
+}
+
+function deleteTask(img){
+  console.log(img, 'li'+img.id)
+  var obj = document.getElementById('li'+img.id)
+  obj.remove();
+}
+
+// this has bug, when checked and then reenter the page, the element before is the checked one
+
+// on the completed tab, will be presented the last five checked
+
+</script>
+
+</body>
+</html>

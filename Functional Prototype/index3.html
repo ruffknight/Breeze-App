@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+    .h2-mulish {
+        font-family: 'Mulish', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="splash">
+            <div class="phone">
+                <div class="screen" onclick="window.location.href = 'index4.html'">
+                    <h2 class="fade-in">
+                    <img src="./img/pau.svg" alt= "Header" class="pau">
+                    <img src="./img/passaro.svg" alt= "Header" class="passaro">
+                    </h2>
+                </div>
+                <div class="faladopassaro">
+                    <h3>
+                        <p>My name is Breezy, and what is yours?</p>
+                    </h3>
+                </div>
+                <div class="nameinput">
+                    <form id="nameUser">
+                        <input type="text" name="name" id="name" value=""> <!-- Nao se pode clicar enter -->
+                    </form>
+                </div>
+                <div onclick="javascript: saveName()">
+                    <img src="img/confirm.svg" alt= "Header" class="skiptutorial"> <!-- change to confirm -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        var saveName = function(){
+            var formEl = document.forms.nameUser;
+            var formData = new FormData(formEl);
+            var name = formData.get('name');
+            localStorage.setItem("user_name", name);
+            location.replace("index4.html");
+        };
+    </script>
+</body>
+</html>

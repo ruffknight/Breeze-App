@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+    .h2-mulish {
+        font-family: 'Mulish', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="splash">
+            <div class="phone">
+                <div class="screen"></div>
+                <div class="welcometext">
+                    <p>Welcome <span id="nameUser"></span>!</p>
+                    <script>
+                        getValue();
+                        function getValue() {
+                            document.getElementById("nameUser").append(localStorage.getItem('user_name'));
+                        }
+                    </script>
+                </div>
+                <div>
+                    <img src="./img/pau.svg" alt= "Header" class="smallpau">
+                    <img src="./img/passaro.svg" alt= "Header" class="smallpassaro">
+                    <img src="./img/circle.svg" onclick="window.location.href = 'moodtracker1.html'" alt= "Header" class="circle3">
+                </div>
+                <div>
+                    <img src="./img/relaxation.svg" onclick="window.location.href = 'meditation0.html'" alt= "Header" class="menurelaxation">
+                    <img src="./img/music.svg" onclick="window.location.href = 'music_menu.html'" alt= "Header" class="menumusic">
+                    <img src="./img/todolist.svg" onclick="window.location.href = 'todo1.html'" alt= "Header" class="menutodolist">
+                </div>
+                <div>
+                    <img src="./img/shuffle.svg" alt= "Header" class="menushuffle1" onclick="random_relax()">
+                    <img src="./img/shuffle.svg" alt= "Header" class="menushuffle2" onclick="random_sound()">
+                </div>
+                <div>
+                    <img src="./img/pau.svg" alt= "Header" class="smallpau2">
+                </div>
+                <div>
+                    <img src="./img/line.svg" alt= "Header" class="separator">
+                    <img src="./img/safeplace.svg" onclick="window.location.href = 'safeplace.html'" alt= "Header" class="navsafeplace">
+                    <img src="./img/homeunselect.svg" alt= "Header" class="navhome">
+                    <img src="./img/learnmore.svg" onclick="window.location.href = 'learnmore.html'" alt= "Header" class="navlearn">
+                    <h6 class="navlearntext">Learn more</h6>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        function random_relax() {
+            var arr = ["meditation3.html", "meditation4.html", "meditation5.html","meditation6.html","meditation8.html","meditation9.html","meditation11.html","meditation12.html","meditation14.html","meditation15.html",
+            "breathing2.html", "breathing3.html","breathing4.html", 
+            "video1.html", "video2.html", "video3.html", "video4.html",
+            "flexibility1.html", "flexibility2.html", "flexibility3.html","flexibility4.html",
+            "strength1.html", "strength2.html","strength3.html","strength4.html",
+            "mind1.html", "mind2.html", "mind3.html", "mind4.html"];
+
+            var value = arr[Math.floor(Math.random() * arr.length)];
+             window.location.href = value;     
+        }
+
+        function random_sound() {
+            var arr = ["ambience_sea.html", "ambience_rain.html", "ambience_fireplace.html", 
+            "ambience_forest.html"];
+            var value = arr[Math.floor(Math.random() * arr.length)];
+             window.location.href = value;     
+        }
+    </script>
+</body>
+</html>
