@@ -31,7 +31,7 @@ The project utilizes the following stack:
 
 ## Website
 
-The complete project journey, from research to implementation, is documented on the official Breeze website. Explore the project's evolution, design choices, technical details, and more in the [Breeze Website](https://ccu2020.wixsite.com/breezeapp)
+The complete project journey, from research to implementation, is documented on the official Breeze website. Explore the project's evolution, design choices, technical details, and more on the [Breeze Website](https://ccu2020.wixsite.com/breezeapp)
 
 ## Features
 
