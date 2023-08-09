@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Amidst the challenges posed by the pandemic, maintaining our mental well-being has become a crucial aspect of our lives. Breeze, a mindfulness and well-being app, emerged from a collaborative effort by a dedicated team of six engineers during the User-Centered Design 2020/2021 course project. The application aims to provide users with tools to navigate these uncertain times and promote mental wellness and stress management.
+Amidst the challenges posed by the pandemic, maintaining mental well-being has become a crucial aspect of our lives. Breeze, a mindfulness and well-being app, emerged from a collaborative effort by a dedicated team of six engineers during the User-Centered Design 2020/2021 course project. The application aims to provide users with tools to navigate these uncertain times and promote mental wellness and stress management.
 
 ## Project Overview
 
