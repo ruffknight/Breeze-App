@@ -8,7 +8,7 @@ Amidst the challenges posed by the pandemic, maintaining mental well-being has b
 
 ## Project Overview
 
-Breeze was conceptualized as a response to the unique challenges brought about by the COVID-19 pandemic. Our team, comprising individuals with diverse skills, came together to develop an application that would address the evolving needs of individuals during these trying times. The app's core features include guided meditation, to-do list management, and access to resources for seeking help when needed.
+Breeze was conceptualized as a response to the unique challenges brought about by the COVID-19 pandemic. Our team, comprising individuals with diverse skills, came together to develop an application that would address the evolving needs of individuals during these trying times. The process included a project pitch, user research as well as findings analysis and synthesis, prototyping (from low to high fidelity), user testing throughout, and the development of a functional prototype. Every week the team prepared visual presentations distilling the prior week's efforts and findings. In the end the team prepared a final presentation summarizing the process and produced a report documenting the process and final product achieved. The app's core features include guided meditation, to-do list management, and access to resources for seeking help when needed.
 
 ### Technology Stack
 
